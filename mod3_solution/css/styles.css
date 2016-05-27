@@ -135,6 +135,15 @@ body {
 	.navbar-brand p img { /* Star-K */
 		height: 20px;
 	}
+
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
 }
 
 
