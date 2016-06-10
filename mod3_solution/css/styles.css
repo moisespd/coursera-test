@@ -17,6 +17,10 @@
 	text-align: center;
 }
 
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+
 #nav-list a span {
 	font-size: 1.8em;
 }
