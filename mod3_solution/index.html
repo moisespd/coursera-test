@@ -1,71 +1,84 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
+    <title>Mod3 solution by moisespd</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
-  </head>
-<body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class = "container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
 
-          <div class="navbar-brand">
-            <a href="index.html">
-              <h1> David Chu's China Bistro </h1>
-            </a>
-            <p>
-              <img src="images/star-k-logo.png" alt="Kosher certification">
-              <span>Kosher Certified</span>
-            </p>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header> 
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class = "container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Food, LCC</a>
+
+            <button type="button" class="navbar-toggle collapsed visible-xs hidden-lg hidden-md" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+
+          </div> 
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </ul>
           </div>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
         </div>
+      </nav> 
+    </header>
+
+    <h1 class="text-center"> Our menu </h1>
+
+    <div id = "chicken" class="column"> 
+      <div class = "section">
+        <div class="title" id = "chicken_title">Chicken</div>
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
 
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="menu-categories.html">
-                <span class="glyphicon glyphicon-cutlery"> </span> <br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-info-sign"></span> <br class="hidden-xs"> About</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"> </span> <br class="hidden-xs"> Awards</a>
-            </li>
-            <li id="phone" class="hidden-xs">
-              <a href="tel:410-602-5008">
-                <span>410-602-5008</span></a><div>* We Deliver</div>
-            </li>                
-          </ul>
-        </div> 
-        
+        Where does it come from?
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+        Where can I get some?
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
       </div>
-    </nav>
-  </header>
+    </div>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <div id = "beef" class="column">
+    <div class = "section">
+    <div class="title" id = "beef_title">Beef</div>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+    </div>
+    </div>
+
+    <div id = "sushi" class="column">
+    <div class = "section">
+    <div class="title" id = "sushi_title">Sushi</div>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+    </div>
+    </div>
+ 
+  </body>
 </html>
