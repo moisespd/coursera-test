@@ -1,0 +1,13 @@
+<h3> {{ list.title }} </h3>
+<!-- <div class="error" ng-if='list.isEmpty()'>
+  Nothing found
+</div> -->
+
+<ol>
+  <li ng-repeat="item in list.foundItems">
+    <found-item></found-item>
+    <button ng-click="list.onRemove({index: $index})">Remove</button>
+    <br>
+    &nbsp;
+  </li>
+</ol>
