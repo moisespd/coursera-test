@@ -72,7 +72,7 @@
     list.searchText = "";
     list.foundItems = [];
     list.allMenuItems = [];
-    list.title = list.foundItems.length + " items found";
+    list.title = "";
 
 
     // ---------------------------------------------------------------------
@@ -98,7 +98,12 @@
             list.foundItems.push(list.allMenuItems[i]);
           }
         }
-        list.title = list.foundItems.length + " items found";
+        if (list.foundItems.length == 0) {
+          list.title = "Nothing found";
+        }
+        else {
+          list.title = list.foundItems.length + " items found";
+        }
       })
       .catch(function(error) {
         console.log("something went wrong");
