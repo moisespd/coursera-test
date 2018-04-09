@@ -5,7 +5,6 @@
   .controller('NarrawItDownController', NarrawItDownController)
   .service('MenuSearchService', MenuSearchService)
   .constant('ApiBaseURL', "http://davids-restaurant.herokuapp.com")
-  //.controller('FoundListDirectiveController', FoundListDirectiveController)
   .directive('foundItem', FoundItem)
   .directive('foundList', FoundListDirective);
 
@@ -83,13 +82,13 @@
     // ---------------------------------------------------------------------
     list.findItems = function(strValue) {
       list.foundItems = [];
-      list.title = "";
+      list.title = "looking for elements...";
 
       if (strValue === "") {
         list.title = "Write your search text!"
         return;
       }
-      
+
       var promise = MenuSearchService.getMatchedMenuItems();
 
       promise.then(function (response) {
@@ -103,6 +102,8 @@
       })
       .catch(function(error) {
         console.log("something went wrong");
+        console.log(error);
+        list.title = "Something went wrong";
       });
     };
     // ---------------------------------------------------------------------
